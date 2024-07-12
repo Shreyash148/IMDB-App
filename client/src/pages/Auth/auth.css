@@ -1,0 +1,42 @@
+.container{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.container form{
+  box-shadow:0rem 0rem 1rem 0rem rgb(65, 66, 66);
+  background-color: rgb(69, 68, 68);
+  padding:2rem 4rem;
+  text-align: center;
+  margin: 2rem 0rem;
+  border-radius: 30px;
+}
+.container input{
+  padding: 0.5rem;
+  margin:0.75rem;
+  border:none;
+  border-radius: 0.75rem;
+  box-shadow: 0rem 0rem 1rem 0rem rgb(65, 77, 81);
+  width:100%;
+  font-size: larger;
+  outline:none;
+}
+.submit button{
+  background-color: rgb(31, 54, 227);
+  cursor: pointer;
+  color:white;
+  margin:1rem 0rem;
+  padding:0.75rem 2.5rem;
+  font-size: larger;
+  border:1px solid;
+  border-radius: 1rem;
+}
+.submit button:hover{
+  background-color: rgb(76, 115, 212);
+}
+.forgot{
+  cursor: pointer;
+  color:rgb(68, 68, 232);
+  text-decoration: underline;
+}
+

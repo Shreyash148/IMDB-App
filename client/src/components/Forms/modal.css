@@ -1,0 +1,150 @@
+.modal-container {
+	font-family: Arial, sans-serif;
+	background-color: #000000d4;
+	position: fixed;
+	top: 0%;
+	left: 0%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	width: 100vw;
+  z-index: 1000;
+}
+
+.form-container {
+	background-color: #534f4f;
+	padding: 20px 30px;
+	border-radius: 10px;
+	height: 85vh;
+	width: 40vw;
+	color: white;
+	overflow-y: scroll;
+}
+
+.form-container::-webkit-scrollbar,
+.custom-dropdown::-webkit-scrollbar {
+	display: none;
+}
+
+.form-container,.custom-dropdown {
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+h1 {
+	text-align: center;
+	color: #ffffff;
+	margin-bottom: 20px;
+}
+
+.form-label {
+	display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+.form input[type="text"],
+.form input[type="number"],
+.form input[type="date"],
+.form select,
+.form textarea,
+.form input[type="file"] {
+	width: calc(100% - 22px);
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-sizing: border-box;
+	background-color: #969393;
+	color: white;
+  outline: none;
+}
+
+.form-submit {
+	width: 100%;
+	max-width: 150px;
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	background-color: #007bff;
+	color: white;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.form-submit:hover {
+	background-color: #0056b3;
+}
+
+.form textarea {
+	resize: vertical;
+}
+
+.actor-list {
+	list-style-type: none;
+	padding-left: 0;
+  display: flex;
+}
+
+.actor-list li {
+	background-color: #ffffff;
+  color: #534f4f;
+	padding: 8px;
+	margin-left: 5px;
+  font-size: small;
+  font-weight: 400;
+	border-radius: 5px;
+}
+
+.custom-dropdown {
+	position: relative;
+	background-color: rgb(105, 102, 102);
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	width: 300px;
+  max-height: 200px;
+	z-index: 100;
+  list-style-type: none;
+  overflow-y: scroll;
+  padding-inline-start: 0px;
+  margin: 0%;
+}
+
+.custom-dropdown li {
+	padding: 10px;
+	cursor: pointer;
+}
+
+.custom-dropdown li:hover {
+	background-color: #007bff;
+	color: white;
+}
+
+.close{
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media (max-width: 600px) {
+	.form-container {
+		width: 90%;
+	}
+}
+.movie-poster-container{
+  display: flex;
+  justify-content: center;
+}
+.movie-poster{
+  height: 20vh;
+}
+.person-photo-container{
+  display: flex;
+  justify-content: center;
+}
+.person-photo{
+  height: 20vh;
+  border-radius: 100%;
+}
